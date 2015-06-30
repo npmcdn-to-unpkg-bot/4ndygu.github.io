@@ -440,7 +440,7 @@ body {
 }
 
 #metabar {
-  width: 60%;
+  width: 55%;
   height: 100%;
   margin: 0 auto;
 }
@@ -450,17 +450,16 @@ body {
   height: 100%;
   width: 15%;
   padding: 0;
-  padding-top: 8%;
+  padding-top: 15%;
   margin: 0;
 }
 
 #mainbar {
   float: right;
-  width: 83%;
+  width: 84%;
   height: 100%;
   padding: 0;
-  margin: 0;
-  margin-left: 2%;
+  margin: 5% 0 5% 1%;
 }
 
 
@@ -494,6 +493,16 @@ body {
   margin: 0% 0;
 }
 
+/* Dividers
+   ========================================================================== */
+
+.divider {
+  color: #708090;
+  font-family: eurostile;
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+
 /* SideBar
    ========================================================================== */
 
@@ -504,27 +513,25 @@ body {
 }
 
 #profile {
-  max-height: 65%; 
-  max-width: 65%;
+  height: 65%; 
+  width: 65%;
   border-radius: 50%;
+  -webkit-transition: width 0.5s, height 0.5s; /* Safari */
+  transition: width 0.5s, height 0.5s;
 }
 
-/* Dividers
-   ========================================================================== */
-
-.divider {
-  color: #008B8B;
-  font-family: eurostile;
-  margin-top: 2%;
-  margin-bottom: 0%;
+#profile:hover {
+  height: 100%;
+  width: 100%;
 }
+
 
 /* Lists
    ========================================================================== */
 
 ul {
   list-style-position: inside;
-  list-style-image: url('image/pine.gif');
+  list-style-image: url(image/pine.gif);
   padding-left: 0;
   margin-top: 1%;
   margin-bottom: 1%;
@@ -538,7 +545,6 @@ ul li {
   margin-bottom: 1%;
 }
 
-
 /* Text
    ========================================================================== */
 
@@ -548,6 +554,7 @@ ul li {
   margin-top: 1%;
   margin-bottom: 1%;
 }
+
 
 /* Hyperlinks
    ========================================================================== */
@@ -561,6 +568,7 @@ a:hover {
   color: navy;
   font-weight: bold;
 }
+
 
 /* Images
    ========================================================================== */
@@ -579,4 +587,6 @@ a:hover {
   margin-left: 1%;
   margin-right: 0%;
 }
+
+
 

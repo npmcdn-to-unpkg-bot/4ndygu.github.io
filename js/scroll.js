@@ -19,3 +19,8 @@ $(function() {
     });
     
 });
+
+$("#resume").click(function() {
+    // // hope the server sets Content-Disposition: attachment!
+    window.open(files/resume.pdf);
+});
