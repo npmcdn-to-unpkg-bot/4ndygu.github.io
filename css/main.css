@@ -503,23 +503,23 @@ body {
 }
 
 @-webkit-keyframes color_change {
- from { color: gold; }
+ from { color: #f2c407; }
  to { color: maroon; }
 }
 @-moz-keyframes color_change {
- from { color: gold; }
+ from { color: #f2c407; }
  to { color: maroon; }
 }
 @-ms-keyframes color_change {
- from { color: gold; }
+ from { color: #f2c407; }
  to { color: maroon; }
 }
 @-o-keyframes color_change {
- from { color: gold; }
+ from { color: #f2c407; }
  to { color: maroon; }
 }
 @keyframes color_change {
- from { color: gold; }
+ from { color: #f2c407; }
  to { color: maroon; }
 }
 
