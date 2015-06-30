@@ -434,7 +434,7 @@ th {
    ========================================================================== */
 
 body {
-  background-color: AliceBlue;
+  background-color: #FCFDFF;
   margin: 0;
   padding: 0;
 }
@@ -597,7 +597,6 @@ a:visited, a:link, a:active, a{
 
 a:hover {
   color: #8C001A;
-  font-weight: bold;
 }
 
 
