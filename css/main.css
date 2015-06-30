@@ -435,26 +435,48 @@ th {
 
 body {
   background-color: AliceBlue;
+  margin: 0;
+  padding: 0;
+}
+
+#metabar {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#sidebar {
+  float: left;
+  height: 100%;
+  width: 15%;
+  padding: 0;
+  padding-top: 8%;
+  margin: 0;
 }
 
 #mainbar {
+  float: right;
+  width: 83%;
+  height: 100%;
   padding: 0;
-  margin: 5% 25% 10% 25%;
+  margin: 0;
+  margin-left: 2%;
 }
+
 
 @font-face {
     font-family: archersemibold;
-    src: url(font/archersemibold.otf);
+    src: url(../font/archersemibold.otf);
 }
 
 @font-face {
     font-family: eurostile;
-    src: url(font/eurostile.TTF);
+    src: url(../font/eurostile.TTF);
 }
 
 @font-face {
     font-family: sourcesans;
-    src: url(font/source-sans-pro/regular.otf);
+    src: url(../font/source-sans-pro/regular.otf);
 }
 
 /* Title / Subtitle
@@ -472,12 +494,28 @@ body {
   margin: 0% 0;
 }
 
+/* SideBar
+   ========================================================================== */
+
+.sidebartext {
+  overflow: auto; 
+  float: left;
+  width: 100%;
+}
+
+#profile {
+  max-height: 65%; 
+  max-width: 65%;
+  border-radius: 50%;
+}
+
 /* Dividers
    ========================================================================== */
 
 .divider {
-  color: navy;
-  margin-top: 0%;
+  color: #008B8B;
+  font-family: eurostile;
+  margin-top: 2%;
   margin-bottom: 0%;
 }
 
@@ -486,27 +524,59 @@ body {
 
 ul {
   list-style-position: inside;
+  list-style-image: url('image/pine.gif');
   padding-left: 0;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
   font-family: sourcesans;
-  font-size: 115%;
+  font-size: 125%;
 }
 
 ul li {
   padding: 0;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
+
 
 /* Text
    ========================================================================== */
 
 .text {
   font-family: sourcesans;
-  font-size: 115%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  font-size: 125%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
+/* Hyperlinks
+   ========================================================================== */
+
+a:visited, a:link, a:active, a{
+  text-decoration: none !important;
+  color: #8C001A;
+}
+
+a:hover {
+  color: navy;
+  font-weight: bold;
+}
+
+/* Images
+   ========================================================================== */
+
+.contactleft {
+  margin-left: 0%;
+  margin-right: 1%;
+}
+
+.contact {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.contactright {
+  margin-left: 1%;
+  margin-right: 0%;
+}
 
