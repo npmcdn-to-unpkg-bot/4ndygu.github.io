@@ -434,13 +434,13 @@ th {
    ========================================================================== */
 
 body {
-  background-color: AliceBlue;
+  background-color: #FCFDFF;
   margin: 0;
   padding: 0;
 }
 
 #metabar {
-  width: 55%;
+  width: 60%;
   height: 100%;
   margin: 0 auto;
 }
@@ -456,10 +456,10 @@ body {
 
 #mainbar {
   float: right;
-  width: 84%;
+  width: 79%;
   height: 100%;
   padding: 0;
-  margin: 5% 0 5% 1%;
+  margin: 5% 0 5% 5%;
 }
 
 
@@ -476,6 +476,11 @@ body {
 @font-face {
     font-family: sourcesans;
     src: url(../font/source-sans-pro/regular.otf);
+}
+
+@font-face {
+	font-family: bryant;
+	src: url(../font/bryantregular.ttf);
 }
 
 /* Title / Subtitle
@@ -541,11 +546,27 @@ body {
   overflow: auto; 
   float: left;
   width: 100%;
+  text-align: right;
+  font-family: sourcesans;
+}
+
+.sidebartext a h5 {
+  font-size: 145%;
+}
+
+.sidetext h6 {
+  color:#739AC5;
+  font-size: 115%;
+}
+
+.sidetext h6:hover {
+  color:#2B4F81;
 }
 
 #profile {
   height: 65%; 
   width: 65%;
+  margin: auto;
   border-radius: 50%;
   -webkit-transition: width 0.5s, height 0.5s; /* Safari */
   transition: width 0.5s, height 0.5s;
@@ -562,7 +583,7 @@ body {
 
 ul {
   list-style-position: inside;
-  list-style-image: url(image/pine.gif);
+  list-style-image: url('image/pine.jpg');
   padding-left: 0;
   margin-top: 1%;
   margin-bottom: 1%;
@@ -597,7 +618,6 @@ a:visited, a:link, a:active, a{
 
 a:hover {
   color: #8C001A;
-  font-weight: bold;
 }
 
 
