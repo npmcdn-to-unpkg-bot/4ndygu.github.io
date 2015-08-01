@@ -1,4 +1,3 @@
-
 $(function() {
 
     var $sidebar   = $("#sidebar"), 
@@ -19,6 +18,11 @@ $(function() {
     });
     
 });
+
+$(function() {   
+    $(window).trigger("scroll");        
+});
+
 
 $("#resume").click(function() {
     // // hope the server sets Content-Disposition: attachment!
