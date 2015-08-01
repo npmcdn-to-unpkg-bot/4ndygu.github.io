@@ -19,10 +19,9 @@ $(function() {
     
 });
 
-$(function() {   
+$(document).ready(function() {   
     $(window).trigger("scroll");        
 });
-
 
 $("#resume").click(function() {
     // // hope the server sets Content-Disposition: attachment!
