@@ -9,8 +9,9 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/scroll.js" type="text/javascript"></script>
-    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/process_rss.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<pre class="prettyprint"><script type="text/javascript" src="http://andygu168.tumblr.com/api/read/json"></script></pre>
 
 	<!-- Google Analytics -->
     <script>
@@ -31,8 +32,8 @@
 		<nav id="sidebar">
 				<div class="sidebartext">
 					<img id="profile" src="me.jpg">
-					<a style="color:#2B4F81"><h5>about me</h5></a>
-					<a class="sidetext" href="blog.html"><h6>blog</h6></a>
+					<a style="color:#2B4F81" id="mainlink"><h5>about me</h5></a>
+					<a class="sidetext" id="bloglink"><h6>blog</h6></a>
 					<a class="sidetext" href="files/resume.pdf"><h6>resume</h6></a>
 					<a class="sidetext" href="http://agar.io/"><h6>waste time</h6></a>
 					<a class="sidetext" href="http://raindances.vsco.co/grid/1" ><h6>cool photos</h6></a>
@@ -40,46 +41,58 @@
 		</nav>
 
 		<div id="mainbar">
-			<h1 id="title"><a id="pulsate">a</a>ndy gu.</h1>
-			<h2 id="subtitle">university of southern california.</h2>
+			<div id="main">
+				<h1 id="title"><a id="pulsate">a</a>ndy gu.</h1>
+				<h2 id="subtitle">university of southern california.</h2>
 
-			<p class="text">I'm a second year Computer Science / Computer Engineering student at USC. Currently, I work with Dr. John Heidemann at the ANT Lab in Marina Del Rey, where I pursue interests in network security and data analysis.</p>
+				<p class="text">I'm a second year Computer Science / Computer Engineering student at USC. Currently, I work with Dr. John Heidemann at the ANT Lab in Marina Del Rey, where I pursue interests in network security and data analysis.</p>
+			
+				<h3 class="divider">Research</h3> 
+
+				<p class="text">I'm working on the <a href="http://www.isi.edu/ant/retrofuture/">Retrofuture Project</a>, where I conduct research on database query anonymization and create / fiddle with packet capture and data visualization tools. Recent work includes: </p>
+
+				<ul>
+					<li>A <a href="https://github.com/4ndygu/Probe_Plotting">data visualization tool</a> for tracking /24 block outages in ISI data. Completed for the Trinocular Project. For more information, you can request sample data <a href="https://ant.isi.edu/datasets/index.html">here</a> and see sample output <a href="files/trinocplotterimage.jpg">here.</a></li>
+
+					<li>An <a href="https://ant.isi.edu/outage_mapping/">outage geolocator</a> for visualizing ISI trinocular outage datasets over time. Future work includes generalizing for survey data and creating converters for different laboratories.</li>
+				</ul>
+
+				<h3 class="divider">Entertainment</h3>
+
+				<ul>
+					<li><a href="https://github.com/4ndygu/Myo-Cookbook">Myo Cookbook</a>, a Myo ShakeWeight coach-turned cooking guide which tracks gestures and flips through work. Won best Myo Hack (lol) at LAHacks 2015.</li>
+				</ul> 
+
+				<h3 class="divider">School</h3>
+
+				<p class="text">Apart from computer engineering / science, I plan to declare a minor in Communication Design at the Roski School of Art.</p>
+				<p class="text">In addition, I am the external relations director for the Student Coalition for Asian-Pacific Empowerment, a moderator / teaching assistant for CIRCLE, a weekly forum on race, class, and gender issues in the Asian-Pacific community, and a Fellow at the Center of Excellence in Teaching. Current semester plans include furthering my knowledge of networked systems at lab, increasing community awareness of Asian-Pacific American issues in the USC commmunity, and exploring my own relationship with Los Angeles as an opinion writer for the Daily Trojan. Find out more below!</p>		
+
+				<ul>
+					<li><a href="http://cet.usc.edu/undergraduates/index.html">Center for Excellence in Teaching</a></li>
+					<li><a href="https://uscscape.wordpress.com/">Student Coalition for Asian Pacific Empowerment</a></li>
+					<li><a href="https://studentaffairs.usc.edu/faculty-partnerships/apass/">Critical Issues in Race, Class, and Leadership Education</a></li>
+					<li><a href="http://dailytrojan.com/">Daily Trojan Newspaper</a></li>
+				</ul>
+
+				<h3 class="divider">Contact</h3>
+
+				<p class="text">I have a lot of social media. Watch me do fun / dumb things below in the footer. </p>
+				<p class="text">You can also check out my blog and vscocam grid in the lefthand sidebar, as well as shoot me some e-mail (I love e-mail) at andygu@usc.edu.</p>
+			</div>
+
+			<div id="blog">
+				<h1 id="title"><a id="pulsate">B</a>log.</h1>
+
+				<p class="text">If you wanted me to be honest, this is just my Tumblr feed converted to JSON data, then pulled with Javascript. Converting everything to a personally-hosted blog sounded like an { adjective } use of time and energy. </p>
+
+				<p class="text">However, I plan to write some content about work in research, SCAPE, or my personal life and store some of it here. Feel free to read my work!. </p>
 		
-			<h3 class="divider">Research</h3> 
+				<div id="posts"></div>
+			</div>	
 
-			<p class="text">I'm working on the <a href="http://www.isi.edu/ant/retrofuture/">Retrofuture Project</a>, where I conduct research on database query anonymization and create / fiddle with packet capture and data visualization tools. Recent work includes: </p>
-
-			<ul>
-				<li>A <a href="https://github.com/4ndygu/Probe_Plotting">data visualization tool</a> for tracking /24 block outages in ISI data. Completed for the Trinocular Project. For more information, you can request sample data <a href="https://ant.isi.edu/datasets/index.html">here</a> and see sample output <a href="files/trinocplotterimage.jpg">here.</a></li>
-
-				<li>An <a href="https://ant.isi.edu/outage_mapping/">outage geolocator</a> for visualizing ISI trinocular outage datasets over time. Future work includes generalizing for survey data and creating converters for different laboratories.</li>
-			</ul>
-
-			<h3 class="divider">Entertainment</h3>
-
-			<ul>
-				<li><a href="https://github.com/4ndygu/Myo-Cookbook">Myo Cookbook</a>, a Myo ShakeWeight coach-turned cooking guide which tracks gestures and flips through work. Won best Myo Hack (lol) at LAHacks 2015.</li>
-			</ul> 
-
-			<h3 class="divider">School</h3>
-
-			<p class="text">Apart from computer engineering / science, I plan to declare a minor in Communication Design at the Roski School of Art.</p>
-			<p class="text">In addition, I am the external relations director for the Student Coalition for Asian-Pacific Empowerment, a moderator / teaching assistant for CIRCLE, a weekly forum on race, class, and gender issues in the Asian-Pacific community, and a Fellow at the Center of Excellence in Teaching. Current semester plans include furthering my knowledge of networked systems at lab, increasing community awareness of Asian-Pacific American issues in the USC commmunity, and exploring my own relationship with Los Angeles as an opinion writer for the Daily Trojan. Find out more below!</p>		
-
-			<ul>
-				<li><a href="http://cet.usc.edu/undergraduates/index.html">Center for Excellence in Teaching</a></li>
-				<li><a href="https://uscscape.wordpress.com/">Student Coalition for Asian Pacific Empowerment</a></li>
-				<li><a href="https://studentaffairs.usc.edu/faculty-partnerships/apass/">Critical Issues in Race, Class, and Leadership Education</a></li>
-				<li><a href="http://dailytrojan.com/">Daily Trojan Newspaper</a></li>
-			</ul>
-
-			<h3 class="divider">Contact</h3>
-
-			<p class="text">I have a lot of social media. Watch me do fun / dumb things below in the footer. </p>
-			<p class="text">You can also check out my blog and vscocam grid in the lefthand sidebar, as well as shoot me some e-mail (I love e-mail) at andygu@usc.edu.</p>
 			<br>
 			<br>
-
 		</div>
 
 		<div id="footer">
