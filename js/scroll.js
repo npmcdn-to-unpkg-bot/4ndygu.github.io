@@ -24,7 +24,7 @@ $(function() {
 
     $("#mainlink").click(function() {
         $("#main").css("display","block");
-        $("#blog").css("display","none");        
+        $("#blog").css("display","none");          
     })
 });
 
