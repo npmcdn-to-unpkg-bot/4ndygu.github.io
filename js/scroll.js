@@ -17,6 +17,15 @@ $(function() {
         }
     });
     
+    $("#bloglink").click(function() {
+        $("#main").css("display","none");
+        $("#blog").css("display","block");
+    });
+
+    $("#mainlink").click(function() {
+        $("#main").css("display","block");
+        $("#blog").css("display","none");        
+    })
 });
 
 $(document).ready(function() {   
