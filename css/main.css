@@ -574,13 +574,16 @@ body {
   width: 65%;
   margin: auto;
   border-radius: 50%;
-  -webkit-transition: width 0.5s, height 0.5s; /* Safari */
-  transition: width 0.5s, height 0.5s;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #profile:hover {
-  height: 100%;
-  width: 100%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
 }
 
 /* Bar Transitions (initial) 

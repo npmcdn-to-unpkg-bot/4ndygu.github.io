@@ -18,13 +18,16 @@ $(function() {
     });
     
     $("#bloglink").click(function() {
-        $("#main").css("display","none");
+        $("#main").slideUp();
+        //$("#main").css("display","none");
         $("#blog").css("display","block");
+        $(window).trigger("scroll");
     });
 
     $("#mainlink").click(function() {
-        $("#main").css("display","block");
-        $("#blog").css("display","none");          
+        $("#blog").slideUp();
+        $("#main").slideDown();
+        $(window).trigger("scroll");
     })
 });
 
