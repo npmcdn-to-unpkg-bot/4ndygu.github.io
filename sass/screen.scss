@@ -1,0 +1,60 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+/* Globals, Main fonts and Styles */
+
+$font-stack: Droid Serif, sans-serif;
+
+/* Header */
+body {
+	background-color: black;
+}
+
+/* Main Column */
+
+.main-column {
+	h1 {
+		font: 500% $font-stack;
+	}
+	
+	p {
+		font: 300% $font-stack;
+	}
+
+	#slidercontain {
+		height: 20%;
+		margin-bot: 0;
+		margin-top: 3%;
+	}
+
+	#slidercontain .my-slider {
+		width: 100%;
+	}
+
+	#slidercontain .my-slider ul li {
+		img {
+			padding: .5%;
+			background-color: white;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	text-align: left;
+	margin-left: 15%;
+	height: 100%;
+	width: 70%;
+	margin-top: 80px;
+	color: white;
+	overflow: hidden;
+}
+
+/* Links */
+
+a:hover {
+	text-decoration: none;
+}
