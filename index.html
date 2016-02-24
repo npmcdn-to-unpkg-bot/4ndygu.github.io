@@ -68,22 +68,15 @@
     <!-- jQuery (For Bootstrap, also for unslider) -->
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="js/unslider.js"></script> <!-- but with the right path! -->
-    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
     <script>
       jQuery(document).ready(function($) {
-        $('.my-slider').imagesLoaded(
-          function() {
-            $('.my-slider').unslider({
-              dots: true,
-              arrows: false,
-              fluid: true,
-              infinite: true,
-             });
-
-          }
-        );
+        $('.my-slider').unslider({
+          dots: true,
+          arrows: false,
+          fluid: true,
+          infinite: true,
+         });
       });
     </script>
-
   </body>
 </html>
