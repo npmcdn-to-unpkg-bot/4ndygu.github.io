@@ -7,7 +7,12 @@
 
 /* Globals, Main fonts and Styles */
 
-$font-stack: Droid Serif, sans-serif;
+@font-face {
+	font-family: Nimbus;
+	src: url('nimbusmono-regular.otf');
+}
+
+$font-stack: Nimbus, serif;
 
 /* Header */
 body {
