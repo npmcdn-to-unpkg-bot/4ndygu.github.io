@@ -12,7 +12,17 @@
 	src: url('nimbusmono-regular.otf');
 }
 
-$font-stack: Nimbus, serif;
+@font-face {
+	font-family: Afta;
+	src: url('AftaSerifThin-Regular.otf');
+}
+
+@font-face {
+	font-family: Fanwood;
+	src: url('Fanwood.otf');
+}
+
+$font-stack: Fanwood, sans-serif;
 
 /* Header */
 body {
