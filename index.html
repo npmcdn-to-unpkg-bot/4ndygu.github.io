@@ -34,7 +34,7 @@
   <body>   
     <div class="main-column">
       <h1>hallo. im <span style="color: white">andy</span><span id="blinky">_</span></h1>
-      <p>life-long student. i look and write.</p>
+      <p>life-long student. i look & <span id="write"></span></p>
 
       <div id="slidercontain">
         <div style="display: none" class="my-slider">
@@ -65,21 +65,8 @@
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="js/unslider.js"></script> <!-- but with the right path! -->
     <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-    <script>
-      jQuery(document).ready(function($) {
-        $('#container').imagesLoaded()
-        .always( function( instance ) {
-          $('.my-slider').unslider({
-            dots: true,
-            arrows: false,
-            fluid: true,
-            infinite: true,
-           }).fadeIn();
-        })
-
-      });
-    </script>
     <!-- Javascript -->
+    <script src="js/typed.js"></script>
     <script src="js/functions.js"></script>
 
   </body>
